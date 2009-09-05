@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XStreamer.Protocol", "XStre
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XStreamer.Connection.Test", "XStreamer.Connection.Test\XStreamer.Connection.Test.csproj", "{EF24CDB7-F360-414C-BB0D-EFC801C5A818}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XStreamer.Command", "XStreamer.Command\XStreamer.Command.csproj", "{EB7D3CE7-AC8A-444E-B358-93252C57F1B3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XStreamer.Protocol.Test", "XStreamer.Protocol.Test\XStreamer.Protocol.Test.csproj", "{717E1C66-6288-4209-BC00-58371CD6E50B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,6 +35,14 @@ Global
 		{EF24CDB7-F360-414C-BB0D-EFC801C5A818}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EF24CDB7-F360-414C-BB0D-EFC801C5A818}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EF24CDB7-F360-414C-BB0D-EFC801C5A818}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB7D3CE7-AC8A-444E-B358-93252C57F1B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB7D3CE7-AC8A-444E-B358-93252C57F1B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB7D3CE7-AC8A-444E-B358-93252C57F1B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB7D3CE7-AC8A-444E-B358-93252C57F1B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{717E1C66-6288-4209-BC00-58371CD6E50B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{717E1C66-6288-4209-BC00-58371CD6E50B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{717E1C66-6288-4209-BC00-58371CD6E50B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{717E1C66-6288-4209-BC00-58371CD6E50B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

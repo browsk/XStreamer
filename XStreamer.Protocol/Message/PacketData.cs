@@ -25,7 +25,7 @@ namespace XStreamer.Protocol.Message
                 0, data, LengthOffset, 4);
 
             // set the packet type
-            data[IdOffset] = (byte)type;
+            data[TypeOffset] = (byte)type;
 
             // set the id
             Array.Copy(BitConverter.GetBytes(id), 0, data, IdOffset, 4);

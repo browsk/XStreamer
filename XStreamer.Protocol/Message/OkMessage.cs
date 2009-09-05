@@ -2,36 +2,49 @@
 
 namespace XStreamer.Protocol.Message
 {
-    class OkMessage : IMessage
+    public class OkMessage : IMessage
     {
-        private int _messageId;
-
-        private const int Length = 9;
-
         public OkMessage(int messageId)
         {
-            _messageId = messageId;    
+            MessageId = messageId;    
         }
 
+        /// <summary>
+        /// Gets or sets the message id.
+        /// </summary>
+        /// <value>The message id.</value>
         public int MessageId
         {
-            get { throw new NotImplementedException(); }
-            set { throw new NotImplementedException(); }
+            get; set;
         }
 
+        /// <summary>
+        /// Gets the message type.
+        /// </summary>
+        /// <value>The message type.</value>
         public PacketType Type
         {
-            get { throw new NotImplementedException(); }
+            get { return PacketType.Ok; }
         }
 
+        /// <summary>
+        /// Decodes the specified data.
+        /// </summary>
+        /// <param name="data">The data.</param>
         public void Decode(byte[] data)
         {
             throw new NotImplementedException();
         }
 
+        /// <summary>
+        /// Return the message encoded as bytes
+        /// </summary>
+        /// <returns>
+        /// An array of bytes containing the encoded message
+        /// </returns>
         public byte[] AsBytes()
         {
-            return PacketData.CreateData(PacketType.Ok, _messageId, 0);
+            return PacketData.CreateData(PacketType.Ok, MessageId, 0);
         }
     }
 }

@@ -45,6 +45,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MessageFactory.cs" />
+    <Compile Include="Message\DecodeException.cs" />
+    <Compile Include="Message\IMessage.cs" />
+    <Compile Include="Message\InsufficientDataException.cs" />
+    <Compile Include="Message\InvalidMessageTypeException.cs" />
+    <Compile Include="Message\NullMessage.cs" />
+    <Compile Include="Message\OkMessage.cs" />
+    <Compile Include="Message\PacketData.cs" />
+    <Compile Include="Message\PacketType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
