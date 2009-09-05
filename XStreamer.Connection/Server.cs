@@ -6,7 +6,7 @@ using XStreamer.Connection.Event;
 
 namespace XStreamer.Connection
 {
-    public class Server
+    public class Server : IDisposable
     {
         private TcpListener _listener;
 
@@ -23,6 +23,8 @@ namespace XStreamer.Connection
         public void Start()
         {
             _listener = new TcpListener(IPAddress.Any, Port);
+            _listener.Server.SetSocketOption(SocketOptionLevel.IP, SocketOptionName.ReuseAddress, true);
+            _listener.Start();
             _listener.BeginAcceptTcpClient(OnConnect, null);
         }
 
@@ -45,6 +47,11 @@ namespace XStreamer.Connection
                 OnClientConnect(this, new OnClientConnectEventArgs(client));
 
             _listener.BeginAcceptTcpClient(OnConnect, null);
+        }
+
+        public void Dispose()
+        {
+            _listener.Stop();
         }
     }
 }
