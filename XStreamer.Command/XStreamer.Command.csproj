@@ -45,6 +45,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CommandFactory.cs" />
+    <Compile Include="CommandNotFoundException.cs" />
     <Compile Include="ICommand.cs" />
     <Compile Include="NullCommand.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
