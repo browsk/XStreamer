@@ -1,28 +1,25 @@
 ﻿using System;
+using System.Diagnostics;
 
 namespace XStreamer.Protocol.Message
 {
-    public class OkMessage : IMessage
+    public class OkMessage : AbstractMessage
     {
+        public OkMessage()
+        {
+            
+        }
+
         public OkMessage(int messageId)
         {
             MessageId = messageId;    
         }
 
         /// <summary>
-        /// Gets or sets the message id.
-        /// </summary>
-        /// <value>The message id.</value>
-        public int MessageId
-        {
-            get; set;
-        }
-
-        /// <summary>
         /// Gets the message type.
         /// </summary>
         /// <value>The message type.</value>
-        public PacketType Type
+        public override PacketType Type
         {
             get { return PacketType.Ok; }
         }
@@ -31,9 +28,9 @@ namespace XStreamer.Protocol.Message
         /// Decodes the specified data.
         /// </summary>
         /// <param name="data">The data.</param>
-        public void Decode(byte[] data)
+        public override void Decode(byte[] data)
         {
-            throw new NotImplementedException();
+            DecodeHeader(data);
         }
 
         /// <summary>
@@ -42,7 +39,7 @@ namespace XStreamer.Protocol.Message
         /// <returns>
         /// An array of bytes containing the encoded message
         /// </returns>
-        public byte[] AsBytes()
+        public override byte[] AsBytes()
         {
             return PacketData.CreateData(PacketType.Ok, MessageId, 0);
         }

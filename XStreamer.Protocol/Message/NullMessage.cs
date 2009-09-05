@@ -2,17 +2,13 @@
 
 namespace XStreamer.Protocol.Message
 {
-    public class NullMessage : IMessage
+    public class NullMessage : AbstractMessage
     {
-        private const int MessageLength = 9;
-
         /// <summary>
-        /// Gets or sets the message id.
+        /// Gets the message type.
         /// </summary>
-        /// <value>The message id.</value>
-        public int MessageId { get; set; }
-
-        public PacketType Type
+        /// <value>The message type.</value>
+        public override PacketType Type
         {
             get { return PacketType.Null; }
         }
@@ -21,19 +17,9 @@ namespace XStreamer.Protocol.Message
         /// Decodes the specified data.
         /// </summary>
         /// <param name="data">The data.</param>
-        public void Decode(byte[] data)
+        public override void Decode(byte[] data)
         {
-            if (data == null)
-                throw new ArgumentNullException("data");
-
-            if (data.Length < PacketData.HeaderSize)
-                throw new InsufficientDataException();
-
-            PacketType type = (PacketType) data[PacketData.TypeOffset];
-            if (type != Type)
-                throw new InvalidMessageTypeException(Type, type);
-
-            MessageId = BitConverter.ToInt32(data, PacketData.IdOffset);
+            DecodeHeader(data);
         }
 
         /// <summary>
@@ -42,7 +28,7 @@ namespace XStreamer.Protocol.Message
         /// <returns>
         /// An array of bytes containing the encoded message
         /// </returns>
-        public byte[] AsBytes()
+        public override byte[] AsBytes()
         {
             return PacketData.CreateData(PacketType.Null, MessageId, 0);
         }

@@ -1,9 +1,15 @@
 ﻿using System.IO;
+using XStreamer.Protocol.Message;
 
 namespace XStreamer.Command
 {
-    public interface ICommand
+    public interface ICommand<TForMessage>
     {
-        void Execute(Stream stream);
+        /// <summary>
+        /// Executes the implemented command
+        /// </summary>
+        /// <param name="incomingMessage">The incoming message.</param>
+        /// <param name="stream">The stream to be used for writing the response.</param>
+        void Execute(TForMessage incomingMessage, Stream stream);
     }
 }

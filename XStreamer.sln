@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XStreamer.Command", "XStrea
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XStreamer.Protocol.Test", "XStreamer.Protocol.Test\XStreamer.Protocol.Test.csproj", "{717E1C66-6288-4209-BC00-58371CD6E50B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XStreamer.Command.Test", "XStreamer.Command.Test\XStreamer.Command.Test.csproj", "{67C0C61C-1176-46D3-AD8F-7FFC0DA9A8DE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -43,6 +45,10 @@ Global
 		{717E1C66-6288-4209-BC00-58371CD6E50B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{717E1C66-6288-4209-BC00-58371CD6E50B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{717E1C66-6288-4209-BC00-58371CD6E50B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67C0C61C-1176-46D3-AD8F-7FFC0DA9A8DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67C0C61C-1176-46D3-AD8F-7FFC0DA9A8DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67C0C61C-1176-46D3-AD8F-7FFC0DA9A8DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67C0C61C-1176-46D3-AD8F-7FFC0DA9A8DE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

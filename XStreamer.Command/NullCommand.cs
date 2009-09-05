@@ -1,16 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Diagnostics;
 using System.IO;
-using System.Linq;
-using System.Text;
+using XStreamer.Protocol.Message;
 
 namespace XStreamer.Command
 {
-    class NullCommand : ICommand
+    public class NullCommand : ICommand<NullMessage>
     {
-        public void Execute(Stream stream)
+        public void Execute(NullMessage incomingMessage, Stream stream)
         {
-            //OkMessage message = new OkMessage();
+            byte[] data = (new OkMessage(incomingMessage.MessageId)).AsBytes();
+            stream.Write(data, 0, data.Length);
         }
     }
 }
