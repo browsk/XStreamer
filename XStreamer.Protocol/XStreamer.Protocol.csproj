@@ -48,6 +48,8 @@
     <Compile Include="MessageFactory.cs" />
     <Compile Include="Message\AbstractMessage.cs" />
     <Compile Include="Message\DecodeException.cs" />
+    <Compile Include="Message\FileListOpen.cs" />
+    <Compile Include="Message\HandleMessage.cs" />
     <Compile Include="Message\IMessage.cs" />
     <Compile Include="Message\InsufficientDataException.cs" />
     <Compile Include="Message\InvalidMessageIdException.cs" />
