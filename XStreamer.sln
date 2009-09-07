@@ -13,6 +13,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XStreamer.Protocol.Test", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XStreamer.Command.Test", "XStreamer.Command.Test\XStreamer.Command.Test.csproj", "{67C0C61C-1176-46D3-AD8F-7FFC0DA9A8DE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XStreamer.FileSystem", "XStreamer.FileSystem\XStreamer.FileSystem.csproj", "{EB90CAC1-E9A1-4773-AB3B-AA78BA5F579B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XStreamer.FileSystem.Test", "XStreamer.FileSystem.Test\XStreamer.FileSystem.Test.csproj", "{9851B9AA-4E98-4A06-A2B1-52407ACD014C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{CECFBC7C-44B9-410C-A9D1-F5622B5B8B6B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -43,8 +49,22 @@ Global
 		{67C0C61C-1176-46D3-AD8F-7FFC0DA9A8DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{67C0C61C-1176-46D3-AD8F-7FFC0DA9A8DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{67C0C61C-1176-46D3-AD8F-7FFC0DA9A8DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB90CAC1-E9A1-4773-AB3B-AA78BA5F579B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB90CAC1-E9A1-4773-AB3B-AA78BA5F579B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB90CAC1-E9A1-4773-AB3B-AA78BA5F579B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB90CAC1-E9A1-4773-AB3B-AA78BA5F579B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9851B9AA-4E98-4A06-A2B1-52407ACD014C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9851B9AA-4E98-4A06-A2B1-52407ACD014C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9851B9AA-4E98-4A06-A2B1-52407ACD014C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9851B9AA-4E98-4A06-A2B1-52407ACD014C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{67C0C61C-1176-46D3-AD8F-7FFC0DA9A8DE} = {CECFBC7C-44B9-410C-A9D1-F5622B5B8B6B}
+		{717E1C66-6288-4209-BC00-58371CD6E50B} = {CECFBC7C-44B9-410C-A9D1-F5622B5B8B6B}
+		{EF24CDB7-F360-414C-BB0D-EFC801C5A818} = {CECFBC7C-44B9-410C-A9D1-F5622B5B8B6B}
+		{9851B9AA-4E98-4A06-A2B1-52407ACD014C} = {CECFBC7C-44B9-410C-A9D1-F5622B5B8B6B}
 	EndGlobalSection
 EndGlobal
