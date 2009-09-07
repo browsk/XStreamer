@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XStreamer.FileSystem.Test",
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{CECFBC7C-44B9-410C-A9D1-F5622B5B8B6B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XStreamer.Data", "XStreamer.Data\XStreamer.Data.csproj", "{796BB460-6BBE-4EA0-B024-3F96C7C2ED0D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +59,10 @@ Global
 		{9851B9AA-4E98-4A06-A2B1-52407ACD014C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9851B9AA-4E98-4A06-A2B1-52407ACD014C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9851B9AA-4E98-4A06-A2B1-52407ACD014C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{796BB460-6BBE-4EA0-B024-3F96C7C2ED0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{796BB460-6BBE-4EA0-B024-3F96C7C2ED0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{796BB460-6BBE-4EA0-B024-3F96C7C2ED0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{796BB460-6BBE-4EA0-B024-3F96C7C2ED0D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
