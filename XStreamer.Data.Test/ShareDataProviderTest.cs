@@ -227,7 +227,7 @@ namespace XStreamer.Data.Test
         [Fact]
         public void Test_PathForShare_Throws_Exception_For_Non_Existant_Share()
         {
-            Assert.Throws<DataStoreException>(() => _provider.PathForShare("shareA"));
+            Assert.Throws<DataStoreException>(() => _provider.PathForShare("shareX"));
         }
 
     }
