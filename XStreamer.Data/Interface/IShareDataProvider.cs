@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using System.Collections.Generic;
 using XStreamer.Data.Exception;
 
 namespace XStreamer.Data.Interface
@@ -70,6 +67,10 @@ namespace XStreamer.Data.Interface
         /// </exception>
         string PathForShare(string name);
 
-
+        /// <summary>
+        /// Return all the share data
+        /// </summary>
+        /// <returns>the share data</returns>
+        IEnumerable<ShareData> Shares();
     }
 }

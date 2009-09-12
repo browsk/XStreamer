@@ -15,5 +15,14 @@ namespace XStreamer.Data.Exception
         protected DataException(string message) : base(message)
         {
         }
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="DataException"/> class.
+        /// </summary>
+        /// <param name="message">The message.</param>
+        /// <param name="innerException">The inner exception.</param>
+        protected DataException(string message, System.Exception innerException) : base(message, innerException)
+        {
+        }
     }
 }
