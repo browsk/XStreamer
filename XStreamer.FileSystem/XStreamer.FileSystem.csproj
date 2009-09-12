@@ -47,8 +47,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Exception\FolderDoesNotExistException.cs" />
-    <Compile Include="Exception\PathHasNoShareException.cs" />
+    <Compile Include="Exceptions\FolderDoesNotExistException.cs" />
+    <Compile Include="Exceptions\PathHasNoShareException.cs" />
     <Compile Include="VirtualFolder.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

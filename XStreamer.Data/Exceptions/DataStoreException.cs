@@ -1,4 +1,4 @@
-﻿namespace XStreamer.Data.Exception
+﻿namespace XStreamer.Data.Exceptions
 {
     public class DataStoreException : DataException
     {

@@ -1,4 +1,4 @@
-﻿namespace XStreamer.Data.Exception
+﻿namespace XStreamer.Data.Exceptions
 {
     /// <summary>
     /// Exception thrown when an attempt is made to add a new share or update

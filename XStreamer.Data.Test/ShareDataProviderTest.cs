@@ -7,7 +7,7 @@ using System.Data.SQLite;
 using System.Linq;
 using System.Text;
 using LinFu.IoC;
-using XStreamer.Data.Exception;
+using XStreamer.Data.Exceptions;
 using Xunit;
 
 namespace XStreamer.Data.Test

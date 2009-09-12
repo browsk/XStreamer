@@ -1,4 +1,4 @@
-﻿namespace XStreamer.Data.Exception
+﻿namespace XStreamer.Data.Exceptions
 {
     /// <summary>
     /// Exception thrown when the specified share is not found/does not exist

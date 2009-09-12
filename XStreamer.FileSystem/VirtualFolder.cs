@@ -2,7 +2,7 @@
 using System.Linq;
 using System.Collections.Generic;
 using System.IO;
-using XStreamer.FileSystem.Exception;
+using XStreamer.FileSystem.Exceptions;
 
 namespace XStreamer.FileSystem
 {
@@ -78,7 +78,7 @@ namespace XStreamer.FileSystem
 
         }
 
-        private bool FolderExists(string folder)
+        public bool FolderExists(string folder)
         {
             if (_depth == 0)
             {
@@ -115,6 +115,8 @@ namespace XStreamer.FileSystem
 
         public static string PhysicalPathForFolder(string folder)
         {
+            string share = ShareNameForPath(folder);
+
             return string.Empty;
         }
 

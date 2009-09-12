@@ -2,8 +2,8 @@
 using System.Data;
 using System.Data.Common;
 using System.Linq;
-using XStreamer.Data.Exception;
-using XStreamer.Data.Interface;
+using XStreamer.Data.Exceptions;
+using XStreamer.Data.Interfaces;
 
 
 namespace XStreamer.Data

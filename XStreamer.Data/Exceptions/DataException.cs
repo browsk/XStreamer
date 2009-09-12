@@ -1,12 +1,12 @@
 ﻿using System;
 
-namespace XStreamer.Data.Exception
+namespace XStreamer.Data.Exceptions
 {
     /// <summary>
     /// Abstract exception used as base for all exceptions thrown externally
     /// from the <see cref="XStreamer.Data"/> assembly.
     /// </summary>
-    public abstract class DataException : SystemException
+    public abstract class DataException : Exception
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="DataException"/> class.

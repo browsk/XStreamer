@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using XStreamer.FileSystem.Exception;
+using XStreamer.FileSystem.Exceptions;
 using Xunit;
 
 namespace XStreamer.FileSystem.Test
@@ -74,6 +74,13 @@ namespace XStreamer.FileSystem.Test
             Assert.Throws<PathHasNoShareException>(() => VirtualFolder.ShareNameForPath("/"));
         }
 
+        [Fact]
+        public void Test_FolderExists_returns_false_With_No_Shares_Defined()
+        {
+            var virtualFolder = new VirtualFolder(new Dictionary<string, string>());
+
+            Assert.False(virtualFolder.FolderExists("folder"));
+        }
 
     }
 }

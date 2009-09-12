@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
-using XStreamer.Data.Exception;
+using XStreamer.Data.Exceptions;
 
-namespace XStreamer.Data.Interface
+namespace XStreamer.Data.Interfaces
 {
     /// <summary>
     /// Provide facilities for managing shares for XStreamer
